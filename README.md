@@ -6,13 +6,15 @@ As cheap as they are elsewhere (a few euros/year) I wondered if it might be feas
 
 One of the advantages that I think might be interesting is that it does not require port forwarding or the installation of an apache server as the challenge for the certificate is done via dns-challenge on cloudflare. I use cloudflare but you can use whatever you want as the script itself should work with any DNS provider that accepts queries from certbot.
 
+** *This repository will not cover certificate activation on the Plex interface or how to activate a dns-challenge for certbot.* **
+
 I based it on the excellent work of Churro-s which you can find [here](https://gist.github.com/churro-s/fa3fdeb5cf10ebb251aa88338b8b37db).
 
 **My setup**
 
 - Debian 10
 - Domain nameservers on Cloudflare
-- Expect 
+- [Expect](https://wiki.debian.org/Expect) 
 
 **How to**
 
@@ -44,9 +46,6 @@ Practically everything. For example, to make it more accessible to the public, t
 Or maybe someone knows a way not to use expect.
 
 Feel free to fork the project and improve it.
-
-
-
 
 **Notes**
 
